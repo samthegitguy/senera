@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 
+import Image from "next/image";
+import Link from "next/link";
+
+import Navbar from "./navbar";
+import Footer from "./footer";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -31,9 +37,13 @@ export default function RootLayout({
     <html lang="en">
       <title>senera</title>
       <body
-        className={`${montserrat.variable} ${montserrat.variable} antialiased`}
+        className={`${montserrat.variable} ${montserrat.variable} antialiased min-h-screen flex flex-col`}
       >
-        {children}
+        <Navbar />
+
+        <main className="flex-grow">{children}</main>
+
+        <Footer />
       </body>
     </html>
   );

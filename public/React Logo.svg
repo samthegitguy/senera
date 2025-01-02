@@ -1,0 +1,54 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1000"
+  height="500"
+  viewBox="0 0 1000 500"
+  fill="none"
+>
+  <!-- Bar body -->
+  <rect
+    x="50"
+    y="150"
+    width="900"
+    height="200"
+    rx="50"
+    fill="#B0B0B0"
+    stroke="#606060"
+    stroke-width="20"
+  />
+
+  <!-- Left shading -->
+  <rect
+    x="50"
+    y="150"
+    width="200"
+    height="200"
+    rx="50"
+    fill="url(#left-gradient)"
+  />
+
+  <!-- Right shading -->
+  <rect
+    x="750"
+    y="150"
+    width="200"
+    height="200"
+    rx="50"
+    fill="url(#right-gradient)"
+  />
+
+  <!-- Gradients -->
+  <defs>
+    <!-- Left gradient -->
+    <linearGradient id="left-gradient" x1="50" y1="150" x2="250" y2="350">
+      <stop offset="0%" stop-color="#909090" />
+      <stop offset="100%" stop-color="#B0B0B0" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Right gradient -->
+    <linearGradient id="right-gradient" x1="750" y1="150" x2="950" y2="350">
+      <stop offset="0%" stop-color="#B0B0B0" stop-opacity="0" />
+      <stop offset="100%" stop-color="#909090" />
+    </linearGradient>
+  </defs>
+</svg>
