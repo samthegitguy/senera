@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-slate-950 border-gray-200 dark:bg-black fixed w-full z-20">
+    <nav className="bg-zinc-950 border-gray-200 dark:bg-black fixed w-full z-20">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <button
           data-collapse-toggle="navbar-default"
@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <a
             className="bg-transparent hover:bg-white hover:text-black text-white dark:text-white dark:hover:text-black font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded"
-            href="test"
+            href="application"
           >
             Launch application
           </a>

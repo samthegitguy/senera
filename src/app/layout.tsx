@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 import Image from "next/image";
@@ -7,16 +7,6 @@ import Link from "next/link";
 
 import Navbar from "./navbar";
 import Footer from "./footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -30,20 +20,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <title>senera</title>
       <body
         className={`${montserrat.variable} ${montserrat.variable} antialiased min-h-screen flex flex-col`}
       >
-        <Navbar />
+        {/* <Navbar /> */}
 
         <main className="flex-grow">{children}</main>
 
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
